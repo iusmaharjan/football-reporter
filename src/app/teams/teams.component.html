@@ -1,0 +1,13 @@
+<div class="card">
+  <div class="card-header bg-white">
+    <div class="title">
+      Teams
+    </div>
+  </div>
+  <ul class="list-group list-group-flush">
+    <li *ngFor="let team of teams" class="list-group-item">
+      <img class="team-logo" src="assets/logo.svg" />
+      <span class="team-name">{{team.name}}</span>
+    </li>
+  </ul>
+</div>
