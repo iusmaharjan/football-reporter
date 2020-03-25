@@ -5,9 +5,9 @@
     </div>
   </div>
   <ul class="list-group list-group-flush">
-    <li *ngFor="let team of teams" class="list-group-item">
-      <img class="team-logo" src="assets/logo.svg" />
-      <span class="team-name">{{team.name}}</span>
-    </li>
+    <a *ngFor="let team of teams" routerLink="/team/{{team.id}}" class="list-group-item list-group-item-action">
+        <img class="team-logo" src="assets/logo.svg" />
+        <span class="team-name">{{team.name}}</span>
+    </a>
   </ul>
 </div>
